@@ -1,4 +1,4 @@
-displayName: Rewrite Headers
+displayName: Rewrite Headers by Connection Loops
 summary: Rewrites the HTTP request or response headers by replacing a search regex by a replacement string. Supports Host header too.
 type: middleware
 import: github.com/Connection-Loops/traefik-plugin-rewrite-headers
