@@ -15,7 +15,7 @@ The only additional feature it has is, it supports manipulating Host header too.
 experimental:
   plugins:
     rewriteHeaders:
-      moduleName: github.com/Connection-Loops/traefik-plugin-rewrite-headers"
+      moduleName: "github.com/Connection-Loops/traefik-plugin-rewrite-headers"
 ```
 
 ### Dynamic
