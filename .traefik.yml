@@ -1,7 +1,7 @@
 displayName: Rewrite Headers
-summary: Rewrites the HTTP request or response headers by replacing a search regex by a replacement string.
+summary: Rewrites the HTTP request or response headers by replacing a search regex by a replacement string. Supports Host header too.
 type: middleware
-import: github.com/bitrvmpd/traefik-plugin-rewrite-headers
+import: github.com/Connection-Loops/traefik-plugin-rewrite-headers
 compatibility: TODO
 testData:
   rewrites:

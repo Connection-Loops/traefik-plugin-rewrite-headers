@@ -103,6 +103,12 @@ func (r *rewriteBody) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 		for _, header := range headers {
 			value := rewrite.regex.ReplaceAllString(header, rewrite.replacement)
 			req.Header.Add(rewrite.header, strings.TrimSpace(value))
+
+			// Special case for "Host"
+			if strings.EqualFold(rewrite.header, "Host") {
+				req.Host = strings.TrimSpace(value)
+				os.Stdout.WriteString("host header changed to " + req.Host + "\n")
+			}
 		}
 	}
 

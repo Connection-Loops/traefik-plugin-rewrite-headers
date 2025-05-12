@@ -1,8 +1,10 @@
 # Rewrite Headers
 
-Inspired by: https://github.com/XciD/traefik-plugin-rewrite-headers
+Inspired by: https://github.com/XciD/traefik-plugin-rewrite-headers and https://github.com/Connection-Loops/traefik-plugin-rewrite-headers
 
 Rewrite headers is a middleware plugin for [Traefik](https://traefik.io) which replace a header in the request and/or response
+
+The only additional feature it has is, it supports manipulating Host header too. Which is not possible with original repos.
 
 ## Configuration
 
