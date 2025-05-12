@@ -1,10 +1,11 @@
-//nolint
+// nolint
 package traefik_plugin_rewrite_headers
 
 import (
 	"context"
 	"fmt"
 	"net/http"
+	"os"
 	"regexp"
 	"strings"
 )
